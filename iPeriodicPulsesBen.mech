@@ -23,7 +23,7 @@ PPoffset = Inf;   % ms, offset time
 kernel_type = 7;
 width2_rise = 0.25;
 
-s2 = getPeriodicPulseFastBensVersion(PPfreq,PPwidth,PPdelay,Tend,dt,PPonset,PPoffset,Npop,kernel_type,width2_rise,PPcenter,PPnorm,PPnoise,0);
+s2 = getPeriodicPulseFast(PPfreq,PPwidth,PPdelay,Tend,dt,PPonset,PPoffset,Npop,kernel_type,width2_rise,PPcenter,PPnorm,PPnoise,0);
 
 % Functions
 input(X) = s2(k,:)
