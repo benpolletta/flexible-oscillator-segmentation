@@ -12,7 +12,7 @@ savepath = fullfile(pwd, 'Sims', Today);
 mkdir(savepath);
 
 Now = clock;
-name = sprintf('_%g_%g_%.4g', Now(4), Now(5), Now(6));
+name = sprintf('FOS_%g_%g_%.4g', Now(4), Now(5), Now(6));
 
 %% Setting up simulation specifications.
 
