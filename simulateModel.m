@@ -49,7 +49,7 @@ sim_cell = [fieldnames(dsSim_struct), struct2cell(dsSim_struct)]';
     
 if sim_struct.cluster_flag
     
-    data = dsSimulate(sim_spec, sim_cell{:},'study_dir',fullfile(savepath, name));
+    dsSimulate(sim_spec, sim_cell{:},'study_dir',fullfile(savepath, name))
     
     cd (start_dir)
     
