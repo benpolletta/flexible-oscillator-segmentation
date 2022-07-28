@@ -10,7 +10,8 @@ for m = 1:length(model_vary)
     
     vary = [model_vary{m}; simulation_vary];
     
-    sim_struct{m} = initSimStruct('vary', vary, 'name', model_names{m}, 'include_deepFS', include_deepFS(m));
+    sim_struct{m} = initSimStruct('vary', vary, 'name', model_names{m}, 'include_deepFS', include_deepFS(m),...
+        'analysis_functions', @spike_metrics);
     
     simulateModel(sim_struct{m})
     
